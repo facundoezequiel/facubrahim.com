@@ -1,3 +1,4 @@
+import React from "react";
 import { Container } from "./styled";
 import { default as NextLink } from "next/link";
 
