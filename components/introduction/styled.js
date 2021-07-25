@@ -1,14 +1,15 @@
 import styled from "styled-components";
+import { breakpoints } from "../../constants/media";
 
 const Container = styled.section`
   width: 100%;
-  min-height: 2000px;
   margin: 0 auto;
-  padding: 3% 0px 0px 0px;
+  padding: 93px 0px 0px 0px;
   position: relative;
 
   #titleContainer {
-    padding: 4% 0% 0% 0%;
+    padding: 100px 0px 0px 0px;
+    width: 78.125%;
     max-width: 1500px;
     margin: 0 auto;
     display: flex;
@@ -20,12 +21,12 @@ const Container = styled.section`
 
   #titleContainer h1 {
     margin: 0px 0px 0px 0px;
-    padding: 0% 0% 0% 0%;
+    padding: 0px 0px 0px 0px;
     color: #ffffff;
     font-family: Termina, sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 6rem;
+    font-size: clamp(4em, 5vw, 6em);
     text-align: center;
     line-height: 110%;
     text-rendering: optimizeLegibility;
@@ -42,18 +43,24 @@ const Container = styled.section`
     width: 6%;
     top: 17%;
     left: -2.9%;
+    -webkit-filter: drop-shadow(0px 0px 55px rgba(44, 255, 63, 0.55));
+    filter: drop-shadow(0px 0px 55px rgba(44, 255, 63, 0.55));
   }
 
   #ui {
     width: 7%;
     top: 51%;
-    left: -10%;
+    left: -7%;
+    -webkit-filter: drop-shadow(0px 0px 55px rgba(204, 200, 224, 0.6));
+    filter: drop-shadow(0px 0px 55px rgba(204, 200, 224, 0.6));
   }
 
   #chat {
     width: 5%;
     top: 75%;
     left: 6%;
+    -webkit-filter: drop-shadow(0px 0px 55px rgba(224, 224, 222, 0.65));
+    filter: drop-shadow(0px 0px 55px rgba(224, 224, 222, 0.65));
   }
 
   #notes {
@@ -61,24 +68,32 @@ const Container = styled.section`
     top: 13.5%;
     right: -2.2%;
     z-index: 98;
+    -webkit-filter: drop-shadow(0px 0px 55px rgba(156, 114, 191, 1));
+    filter: drop-shadow(0px 0px 55px rgba(156, 114, 191, 1));
   }
 
   #weather {
     width: 6%;
     top: 50%;
-    right: -10%;
+    right: -8%;
+    -webkit-filter: drop-shadow(0px 0px 55px rgba(56, 149, 232, 0.7));
+    filter: drop-shadow(0px 0px 55px rgba(56, 149, 232, 0.7));
   }
 
   #dog {
     width: 5.8%;
     top: 73%;
     right: 5%;
+    z-index: 98;
+    -webkit-filter: drop-shadow(0px 0px 55px rgba(172, 130, 82, 1));
+    filter: drop-shadow(0px 0px 55px rgba(172, 130, 82, 1));
   }
 
   #buttonsContainer,
   #textContainer {
     margin: 0px 0px 0px 0px;
-    padding-top: 2%;
+    padding: 60px 0px 0px 0px;
+    width: 78.215%;
     max-width: 1500px;
     margin: 0 auto;
     display: flex;
@@ -88,7 +103,7 @@ const Container = styled.section`
   }
 
   #textContainer {
-    padding-top: 1%;
+    padding: 30px 0px 0px 0px;
   }
 
   .button {
@@ -130,8 +145,6 @@ const Container = styled.section`
     --background: #275efe;
     --text: #fff;
     --font-size: 1rem;
-    --shadow: 0 2px 8px -1px #{rgba(#275efe, 0.32)};
-    --shadow-hover: 0 4px 20px -2px #{rgba(#275efe, 0.5)};
     letter-spacing: 1px !important;
     padding: 16px 32px;
     margin: 0px 15px 0px 15px;
@@ -146,7 +159,7 @@ const Container = styled.section`
     letter-spacing: 0.5px;
     background: var(--background);
     color: var(--text);
-    box-shadow: var(--shadow);
+    box-shadow: 0 0px 0px 0px #275efe;
     div {
       display: flex;
       justify-content: center;
@@ -155,9 +168,6 @@ const Container = styled.section`
         backface-visibility: hidden;
         font-style: normal;
       }
-    }
-    &:hover {
-      --shadow: var(--shadow-hover);
     }
   }
 
@@ -208,6 +218,7 @@ const Container = styled.section`
       rgba(119, 0, 255, 1) 100%
     );
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0022ff', endColorstr='#7700ff', GradientType=1 );
+    box-shadow: 0 0px 30px 0px rgba(0, 34, 255, 0.5);
   }
 
   #contactButton {
@@ -258,6 +269,15 @@ const Container = styled.section`
     );
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8bbed', GradientType=1 );
     --text: #000 !important;
+    box-shadow: 0 0px 30px 0px rgba(255, 255, 255, 0.3);
+  }
+
+  #workButton:hover {
+    box-shadow: 0 0px 50px 0px rgba(0, 34, 255, 1);
+  }
+
+  #contactButton:hover {
+    box-shadow: 0 0px 40px 0px rgba(255, 255, 255, 0.5);
   }
 
   #textContainer p {
@@ -269,6 +289,12 @@ const Container = styled.section`
     font-family: omnes-pro, sans-serif;
     font-weight: 500;
     font-style: normal;
+  }
+
+  /* ----------- DESKTOP RESPONSIVE ----------- */
+
+  // 1860px Window -----------
+  @media (max-width: ${breakpoints.window1860}) {
   }
 `;
 
