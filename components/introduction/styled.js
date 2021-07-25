@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Container = styled.section`
   width: 100%;
+  min-height: 2000px;
   margin: 0 auto;
   padding: 3% 0px 0px 0px;
   position: relative;
@@ -131,6 +132,7 @@ const Container = styled.section`
     --font-size: 1rem;
     --shadow: 0 2px 8px -1px #{rgba(#275efe, 0.32)};
     --shadow-hover: 0 4px 20px -2px #{rgba(#275efe, 0.5)};
+    letter-spacing: 1px !important;
     padding: 16px 32px;
     margin: 0px 15px 0px 15px;
     font-family: omnes-pro, sans-serif;

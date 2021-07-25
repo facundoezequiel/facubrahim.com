@@ -9,9 +9,14 @@ const Container = styled.header`
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  background-color: #000000;
+  backdrop-filter: blur(13px) brightness(0.2);
+  -webkit-backdrop-filter: blur(13px) brightness(0.2);
   overflow: hidden;
   z-index: 99;
+
+  @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    background-color: rgba(0, 0, 0, 0.95);
+  }
 
   #logoContainer {
     width: 20%;
