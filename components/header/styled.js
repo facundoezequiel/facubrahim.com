@@ -9,7 +9,7 @@ const Container = styled.header`
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #000000;
   overflow: hidden;
   z-index: 99;
 
@@ -35,12 +35,12 @@ const Container = styled.header`
     font-weight: 500;
     font-style: normal;
     font-size: 1.4em;
-    color: #1c0f03;
+    color: #ffffff;
     text-decoration: none;
   }
 
   p {
-    color: Mouse Cursor Follow In React;
+    color: #ffffff;
     text-align: center;
     text-rendering: optimizeLegibility;
     text-decoration: none;
@@ -61,7 +61,7 @@ const Container = styled.header`
   }
 
   #buttonsContainer a {
-    color: #574b33;
+    color: #ffffff;
     text-rendering: optimizeLegibility;
     text-decoration: none;
     margin-left: 30px;

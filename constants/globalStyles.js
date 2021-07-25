@@ -6,7 +6,7 @@ html,
 body {
   padding: 0 !important;
   margin: 0 !important;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 .selectionNone {
@@ -97,16 +97,20 @@ body {
 
   // BottomIn Animation
 
-  .bottomIn {
+  .bottomIn2-3s, .bottomIn1-8s {
     animation-name: bottomIn;
-    animation-duration: 1.8s;
+    animation-duration: 2.3s;
     animation-iteration-count: initial;
     animation-timing-function: ease-in-out;
   }
 
+  .bottomIn1-8s {
+    animation-duration: 1.8s;
+  }
+
   @keyframes bottomIn {
     from {
-      transform: translate(0, 100px);
+      transform: translate(0, 30px);
       opacity: 0%;
     }
     90% {
