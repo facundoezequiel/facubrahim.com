@@ -1,4 +1,4 @@
-import Document from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
@@ -26,5 +26,19 @@ export default class MyDocument extends Document {
     } finally {
       sheet.seal();
     }
+  }
+  render() {
+    return (
+      <Html>
+        <Head />
+        <body>
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script>AOS.init();</script>
+          <Main />
+          <NextScript />
+          <div id="modal-root"></div>
+        </body>
+      </Html>
+    );
   }
 }

@@ -21,6 +21,11 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
+        {/* AOS Scroll */}
+        <link
+          href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+          rel="stylesheet"
+        ></link>
         {/* Themes Colors */}
         <meta
           name="theme-color"

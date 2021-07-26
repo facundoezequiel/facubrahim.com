@@ -3,8 +3,9 @@ import { breakpoints } from "../../constants/media";
 
 const Container = styled.section`
   width: 100%;
+  border-bottom: 1px #222 solid;
   margin: 0 auto;
-  padding: 93px 0px 0px 0px;
+  padding: 60px 0px 93px 0px;
   position: relative;
 
   #titleContainer {
@@ -75,7 +76,7 @@ const Container = styled.section`
   #weather {
     width: 6%;
     top: 50%;
-    right: -8%;
+    right: -6%;
     -webkit-filter: drop-shadow(0px 0px 55px rgba(56, 149, 232, 0.7));
     filter: drop-shadow(0px 0px 55px rgba(56, 149, 232, 0.7));
   }

@@ -2,6 +2,16 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 
+// Scroll Bar Dark
+:root {
+  color-scheme: dark;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
 html, 
 body {
   padding: 0 !important;
