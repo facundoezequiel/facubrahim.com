@@ -32,8 +32,6 @@ export default class MyDocument extends Document {
       <Html>
         <Head />
         <body>
-          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-          <script>AOS.init();</script>
           <Main />
           <NextScript />
           <div id="modal-root"></div>
