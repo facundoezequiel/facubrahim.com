@@ -22,7 +22,7 @@ function AboutMe() {
           <NextLink href="https://www.maimonides.edu/carreras/tecnologia-multimedial/">
             <a target="_blank">University Maimonides</a>
           </NextLink>
-          , I'm a River Plate fan and I like (a lot){" "}
+          , I am a River Plate fan and I like (a lot){" "}
           <NextLink href="https://www.youtube.com/watch?v=OE5mboRvSJg">
             <a target="_blank">Star Wars</a>
           </NextLink>{" "}
