@@ -20,7 +20,7 @@ function AboutMe() {
           </NextLink>
           , study Bachelor of Multimedia Technology at{" "}
           <NextLink href="https://www.maimonides.edu/carreras/tecnologia-multimedial/">
-            <a target="_blank">University Maimonides</a>
+            <a target="_blank">Maimonides University</a>
           </NextLink>
           , I am a River Plate fan and I like (a lot){" "}
           <NextLink href="https://www.youtube.com/watch?v=OE5mboRvSJg">
